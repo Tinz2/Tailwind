@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tailwind-project
+    env: node
+    plan: free
+    buildCommand: "vite build"
+    startCommand: "vite preview --port $PORT"
+    envVars:
+      - key: NODE_VERSION
+        value: 16
+    publish:
+      - path: dist
