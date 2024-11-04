@@ -13,7 +13,7 @@ RUN npm install
 # คัดลอกไฟล์โปรเจคทั้งหมดไปยัง container
 COPY . .
 
-# สร้างไฟล์ production build
+# สร้าง production build
 RUN npm run build
 
 # ระบุพอร์ตที่จะใช้
